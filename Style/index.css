@@ -52,7 +52,7 @@ body {
 	
 }
 @-webkit-keyframes step1 {
-	0%   {  left: 0px;}
+	0%   {  left: 10px;}
     100% {  left: 800px;}
 }
 
@@ -69,8 +69,8 @@ body {
     100% {transform: rotate(90deg); border-color: #0900BD ; left:0px;}
 }
 @-webkit-keyframes step5 {
-    0%   {transform: rotate(45deg);border-radius:0; background-color:#F3EDED; left: 0px; top:400px; }
-    100% {transform: rotate(90deg);border-radius: 50% ; background-color: #F89F3C; left:800px; top:600px;}
+    0%   {transform: rotate(45deg);border-radius:0; background: transparent;, left: 0px; top:400px; width: 100%; }
+    100% {transform: rotate(90deg);border-radius: 50% ; background: radial-gradient(#F76B1C,#F8DA61); left:800px; top:600px; width: 150%;}
 }
 
 
