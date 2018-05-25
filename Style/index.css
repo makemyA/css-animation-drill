@@ -1,3 +1,96 @@
-body {
-	background-image: url("./images/css_animation_exercice_1/png");
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
 }
+
+body {
+	width:90%;
+	height: 1000px;
+	margin: 0 auto 0 auto;
+	text-align: center;
+
+
+}
+#stage {
+	background-image: url("images/css_animation_exercise_stage.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 1000px;
+	height: 800px;
+	opacity: 0.4;
+	margin: 0 auto 0 auto;
+	
+}
+#hero {
+	/*background-image: url("images/css_animation_exercise_square.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 1000px;
+	height: 800px;
+	opacity: 0.4;*/
+	position: relative;
+	width: 125px;
+	height: 125px;
+	border: 1px dashed red;
+	top: 30px;
+	left: 30px;
+	/*animation: step1 5s 0s 0s linear forward step2 5s linear;*/
+	animation-name: step1,step2,step3,step4,step5;
+	animation-duration: 5s,2s,500ms,2.5s,5s;
+	animation-iteration-count:1;
+	animation-delay: 0s,5s,7s,10s,12.5s;
+	animation-direction: normal;
+	animation-fill-mode: forwards;
+	animation-timing-function: linear;
+
+	
+	
+	
+	
+
+	
+}
+@-webkit-keyframes step1 {
+	0%   {  left: 0px;}
+    100% {  left: 800px;}
+}
+
+@-webkit-keyframes step2 {
+    0%   {top:0px;}
+    100% {top: 300px;}
+}
+@-webkit-keyframes step3 {
+    0%   { left: 0px; transform: rotate(0deg);}
+    100% { left: 400px; transform: rotate(45deg);}
+}
+@-webkit-keyframes step4 {
+    0%   {transform: rotate(45deg); border-color: red;left: 400px; }
+    100% {transform: rotate(90deg); border-color: #0900BD ; left:0px;}
+}
+@-webkit-keyframes step5 {
+    0%   {transform: rotate(45deg);border-radius:0; background-color:#F3EDED; left: 0px; top:400px; }
+    100% {transform: rotate(90deg);border-radius: 50% ; background-color: #F89F3C; left:800px; top:600px;}
+}
+
+
+/*
+STEP1
+#hero {
+	/*background-image: url("images/css_animation_exercise_square.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 1000px;
+	height: 800px;
+	opacity: 0.4;
+	position: relative;
+	width: 125px;
+	height: 125px;
+	border: 1px dashed red;
+	top: 30px;
+	left: 30px;
+	animation-name: step1;
+	animation-duration: 5s;	
+}
+
+animation-iteration-count: infinite;*/
