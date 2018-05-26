@@ -96,7 +96,6 @@ header {
 	background-size: cover;
 	width: 600px;
 	height: 600px;
-	
 	margin: 0 auto 0 auto;
 }
 	
@@ -413,7 +412,7 @@ header {
 	border: 1px dashed red;
 	top:20px;
 	left:20px;
-	animation-name: step1,step2,step3,step4,step5;
+	animation-name: step01,step02,step03,step04,step05;
 	animation-duration: 5s,5s,500ms,2.5s,5s;
 	animation-iteration-count:2,2,1,1,1;
 	animation-delay:0s,10s,20s,22.5s,25s;
@@ -422,27 +421,27 @@ header {
 	animation-timing-function: linear;
 }
 
-	@-webkit-keyframes step1 {
+	@-webkit-keyframes step01 {
 	0%   {}
     100% {  left: 380px;}
 
 }
-	@-webkit-keyframes step2 {
+	@-webkit-keyframes step02 {
 	0%   {top:20px;}
     100% {  top: 205px;}
 
 }
-	@-webkit-keyframes step3 {
+	@-webkit-keyframes step03 {
 	0%   { left: 380px;}
     100% { transform: rotate(45deg); left: 213.75px;}
 }
 
-	@-webkit-keyframes step4 {
+	@-webkit-keyframes step04 {
 	0%   { transform: rotate(45deg);left: 200px;}
     100% { transform: rotate(0deg); left: 20px; border-color: #0900BD;}
 }
 
-	@-webkit-keyframes step5 {
+	@-webkit-keyframes step05 {
 	0%   {background-color: transparent; top: 205px; left:20px;}
     100% {background: radial-gradient(rgb(251, 218, 97), rgb(247, 107, 28));top: 444px; left: 314px; border-radius: 50%; width: 150px; height: 150px; border-width: 0px;}
 }
