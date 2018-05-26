@@ -7,7 +7,9 @@
 }
 
 body {
-
+width:1140px;
+height: auto;
+text-align: justify;
 }
 
 header {
@@ -92,7 +94,7 @@ header {
 	/*background-image: url("images/css_animation_exercise_4.png");*/
 	background-repeat: no-repeat;
 	background-size: cover;
-	width: 41.66%;
+	width: 600px;
 	height: 600px;
 	
 	margin: 0 auto 0 auto;
@@ -173,6 +175,7 @@ header {
 }
 .boxright {
 	background-image: url("images/css_animation_exercise_stage.png");
+	width: 600px;
 
 	text-align: center;
 
@@ -284,7 +287,7 @@ header {
 	background-image: url("images/css_animation_exercise_1.png");
 	background-repeat: no-repeat;
 	background-size: cover;
-	width: 41.66%;
+	width: 600px;
 	height: 200px;
 	opacity:;
 	margin: 0 auto 0 auto;
@@ -313,14 +316,14 @@ header {
 
 	@-webkit-keyframes exercice1 {
 	0%   {}
-    100% {  left: 500px;}
+    100% {  left: 380px;}
 
 }
 .section-exercice2 .boxleft {
 	background-image: url("images/css_animation_exercise_2.png");
 	background-repeat: no-repeat;
 	background-size: cover;
-	width: 41.66%;
+	width: 600px;
 	height: 200px;
 	opacity:;
 	margin: 0 auto 0 auto;
@@ -348,14 +351,14 @@ header {
 
 	@-webkit-keyframes exercice2 {
 	0%   {}
-    100% {  left: 500px;}
+    100% {  left: 380px;}
 
 }
 .section-exercice3 .boxleft {
 	background-image: url("images/css_animation_exercise_3.png");
 	background-repeat: no-repeat;
 	background-size: cover;
-	width: 41.66%;
+	width: 600px;
 	height: 200px;
 	opacity:;
 	margin: 0 auto 0 auto;
@@ -384,7 +387,7 @@ header {
 
 	@-webkit-keyframes exercice3 {
 	0%   {}
-    100% {  left: 500px;}
+    100% {  left: 380px;}
 
 }
 
@@ -392,7 +395,7 @@ header {
 	background-image: url("images/css_animation_exercise_4.png");
 	background-repeat: no-repeat;
 	background-size: cover;
-	width: 41.66%;
+	width: 600px;
 	height: 600px;
 	opacity:;
 	margin: 0 auto 0 auto;
@@ -421,7 +424,7 @@ header {
 
 	@-webkit-keyframes step1 {
 	0%   {}
-    100% {  left: 500px;}
+    100% {  left: 380px;}
 
 }
 	@-webkit-keyframes step2 {
@@ -430,18 +433,18 @@ header {
 
 }
 	@-webkit-keyframes step3 {
-	0%   { left: 500px;}
-    100% { transform: rotate(45deg); left: 270px;}
+	0%   { left: 380px;}
+    100% { transform: rotate(45deg); left: 213.75px;}
 }
 
 	@-webkit-keyframes step4 {
-	0%   { transform: rotate(45deg);left: 270px;}
+	0%   { transform: rotate(45deg);left: 200px;}
     100% { transform: rotate(0deg); left: 20px; border-color: #0900BD;}
 }
 
 	@-webkit-keyframes step5 {
 	0%   {background-color: transparent; top: 205px; left:20px;}
-    100% {background: radial-gradient(rgb(251, 218, 97), rgb(247, 107, 28));top: 443px; left: 444px; border-radius: 50%; width: 150px; height: 150px; border-width: 0px;}
+    100% {background: radial-gradient(rgb(251, 218, 97), rgb(247, 107, 28));top: 444px; left: 314px; border-radius: 50%; width: 150px; height: 150px; border-width: 0px;}
 }
 
 
