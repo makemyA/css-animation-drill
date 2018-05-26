@@ -17,6 +17,7 @@ header {
 	margin: 20px auto 20px auto;
 	height: 30px;
 	background-color: #323232;
+
 	text-align: center;
 
 
@@ -172,6 +173,105 @@ header {
 }
 .boxright {
 	background-image: url("images/css_animation_exercise_stage.png");
+
+	text-align: center;
+
+
+}
+
+.box {
+	display:flex;
+	justify-content: center;
+	align-items: center;
+}
+.menu {
+	grid-column: 2 / 3;
+	height:100%;
+	padding: 0px;
+
+
+	
+}
+.list {
+	display: flex;
+	flex-direction: row;
+	height: 100%;
+	width: 70%;
+	justify-content: space-around;
+	align-items: center;
+	list-style: none;
+
+}
+.list-item {
+	
+
+}
+ .list-item .instructions {
+	grid-column: 1 / 2 ;
+	flex: ;
+	
+}
+.exercice-1 {
+	flex:;
+
+}
+.exercice-2 {
+    flex:;
+}
+.exercice-3 {
+	flex:;
+}
+.exercice-4 {
+	flex:;
+}
+.links {
+	text-decoration: none;
+	color: white;
+
+	justify-content: space-around;
+	padding: 5px;
+}
+
+.main-title {
+	text-align: center;
+	margin: 50px;
+	background-color: #E34C26;
+	color: white;
+	font-weight: 700;
+	font-size: 100px;
+}
+
+.section-exercice {
+	display: flex;
+	flex-direction: row;
+	margin: 50px 0 50px 0;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+}
+.section-exercice1 {
+	
+}
+.secondary-title {
+	text-align: center;
+	padding: 20px;
+	margin: 50px;
+	flex: 100%; /*traduction: une fois que le titre atteint 100% de son div, faire passer la prochaine
+	              box à la ligne. */
+
+	color: #1D93CC;
+	font-weight: 700;
+	font-size: 40px;
+}
+.ancre-top {
+	width: 10%;
+	text-align: center;
+	margin: 30px auto 30px auto;
+	background-color: #E34C26;
+
+}
+.boxright {
+	background-image: url("images/css_animation_exercise_stage.png");
 	background-repeat: no-repeat;
 	background-size: cover;
 	width: 41.66%;
@@ -228,6 +328,7 @@ header {
 .section-exercice2 .boxright {
 	height: 200px;
 }
+
 
 #hero-ex2 {
 	position: relative;
