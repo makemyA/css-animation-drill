@@ -2,13 +2,364 @@
   -webkit-box-sizing: border-box;
      -moz-box-sizing: border-box;
           box-sizing: border-box;
+          padding:0px;
+          margin:0px;
 }
 
 body {
-	width:100%;
-	height: auto;
-	text-align: center;
+
 }
+
+header {
+	display: grid;
+	grid-template-columns: : 1fr 3fr;
+	width: 100%;
+	margin: 20px auto 20px auto;
+	height: 30px;
+	background-color: #323232;
+	text-align: center;
+
+
+}
+
+.box {
+	display:flex;
+	justify-content: center;
+	align-items: center;
+}
+.menu {
+	grid-column: 2 / 3;
+	height:100%;
+	padding: 0px;
+
+
+	
+}
+.list {
+	display: flex;
+	flex-direction: row;
+	height: 100%;
+	width: 70%;
+	justify-content: space-around;
+	align-items: center;
+	list-style: none;
+
+}
+.list-item {
+	
+
+}
+ .list-item .instructions {
+	grid-column: 1 / 2 ;
+	flex: ;
+	
+}
+.exercice-1 {
+	flex:;
+
+}
+.exercice-2 {
+    flex:;
+}
+.exercice-3 {
+	flex:;
+}
+.exercice-4 {
+	flex:;
+}
+.links {
+	text-decoration: none;
+	color: white;
+
+	justify-content: space-around;
+	padding: 5px;
+}
+
+.main-title {
+	text-align: center;
+	margin: 50px;
+	background-color: #E34C26;
+	color: white;
+	font-weight: 700;
+	font-size: 100px;
+}
+
+
+
+#stage {
+	background-image: url("images/css_animation_exercise_4.png");
+	/*background-image: url("images/css_animation_exercise_4.png");*/
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 41.66%;
+	height: 600px;
+	
+	margin: 0 auto 0 auto;
+}
+	
+	#hero {
+	background-image: url();
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+	width:75px;
+	height:75px;
+	border: 1px dashed red;
+	top:20px;
+	left:20px;
+	animation-name: step1,step2,step3,step4,step5;
+	animation-duration: 5s,5s,500ms,2.5s,5s;
+	animation-iteration-count:2,2,1,1,1;
+	animation-delay:0s,10s,20s,22.5s,25s;
+	animation-direction: normal;
+	animation-fill-mode: forwards;
+	animation-timing-function: linear;
+}
+
+	@-webkit-keyframes step1 {
+	0%   {}
+    100% {  left: 500px;}
+
+}
+	@-webkit-keyframes step2 {
+	0%   {top:20px;}
+    100% {  top: 205px;}
+
+}
+	@-webkit-keyframes step3 {
+	0%   { left: 500px;}
+    100% { transform: rotate(45deg); left: 270px;}
+}
+
+	@-webkit-keyframes step4 {
+	0%   { transform: rotate(45deg);left: 270px;}
+    100% { transform: rotate(0deg); left: 20px; border-color: #0900BD;}
+}
+
+	@-webkit-keyframes step5 {
+	0%   {background-color: transparent; top: 205px; left:20px;}
+    100% {background: radial-gradient(rgb(251, 218, 97), rgb(247, 107, 28));top: 443px; left: 444px; border-radius: 50%; width: 150px; height: 150px; border-width: 0px;}
+}
+
+.section-exercice {
+	display: flex;
+	flex-direction: row;
+	margin: 50px 0 50px 0;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+}
+.section-exercice1 {
+	
+}
+.secondary-title {
+	text-align: center;
+	padding: 20px;
+	margin: 50px;
+	flex: 100%; /*traduction: une fois que le titre atteint 100% de son div, faire passer la prochaine
+	              box à la ligne. */
+
+	color: #1D93CC;
+	font-weight: 700;
+	font-size: 40px;
+}
+.ancre-top {
+	width: 10%;
+	text-align: center;
+	margin: 30px auto 30px auto;
+	background-color: #E34C26;
+
+}
+.boxright {
+	background-image: url("images/css_animation_exercise_stage.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 41.66%;
+	height: 600px;
+	opacity:;
+	margin: 0 auto 0 auto;
+}
+
+.section-exercice1 .boxleft {
+	background-image: url("images/css_animation_exercise_1.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 41.66%;
+	height: 200px;
+	opacity:;
+	margin: 0 auto 0 auto;
+}
+.section-exercice1 .boxright {
+	height: 200px;
+}
+
+
+#hero-ex1 {
+	
+	position: relative;
+	width:75px;
+	height:75px;
+	border: 1px dashed red;
+	top:20px;
+	left:20px;
+	animation-name: exercice1;
+	animation-duration: 5s;
+	animation-iteration-count:1;
+	animation-delay: ;
+	animation-direction: normal;
+	animation-fill-mode: forwards;
+	animation-timing-function: linear;
+}
+
+	@-webkit-keyframes exercice1 {
+	0%   {}
+    100% {  left: 500px;}
+
+}
+.section-exercice2 .boxleft {
+	background-image: url("images/css_animation_exercise_2.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 41.66%;
+	height: 200px;
+	opacity:;
+	margin: 0 auto 0 auto;
+}
+.section-exercice2 .boxright {
+	height: 200px;
+}
+
+#hero-ex2 {
+	position: relative;
+	width:75px;
+	height:75px;
+	border: 1px dashed red;
+	top:20px;
+	left:20px;
+	animation-name: exercice2;
+	animation-duration: 5s;
+	animation-iteration-count:infinite;
+	animation-delay: ;
+	animation-direction: normal;
+	animation-fill-mode: forwards;
+	animation-timing-function: linear;
+}
+
+	@-webkit-keyframes exercice2 {
+	0%   {}
+    100% {  left: 500px;}
+
+}
+.section-exercice3 .boxleft {
+	background-image: url("images/css_animation_exercise_3.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 41.66%;
+	height: 200px;
+	opacity:;
+	margin: 0 auto 0 auto;
+}
+.section-exercice3 .boxright {
+	height: 200px;
+}
+
+
+#hero-ex3 {
+	
+	position: relative;
+	width:75px;
+	height:75px;
+	border: 1px dashed red;
+	top:20px;
+	left:20px;
+	animation-name: exercice3;
+	animation-duration: 2s;
+	animation-iteration-count:infinite;
+	animation-delay: ;
+	animation-direction: alternate;
+	animation-fill-mode: forwards;
+	animation-timing-function: linear;
+}
+
+	@-webkit-keyframes exercice3 {
+	0%   {}
+    100% {  left: 500px;}
+
+}
+
+.section-exercice4 .boxleft {
+	background-image: url("images/css_animation_exercise_4.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 41.66%;
+	height: 600px;
+	opacity:;
+	margin: 0 auto 0 auto;
+}
+.section-exercice4 .boxright {
+	
+}
+
+
+#hero-ex4 {
+	
+	position: relative;
+	width:75px;
+	height:75px;
+	border: 1px dashed red;
+	top:20px;
+	left:20px;
+	animation-name: step1,step2,step3,step4,step5;
+	animation-duration: 5s,5s,500ms,2.5s,5s;
+	animation-iteration-count:2,2,1,1,1;
+	animation-delay:0s,10s,20s,22.5s,25s;
+	animation-direction: normal;
+	animation-fill-mode: forwards;
+	animation-timing-function: linear;
+}
+
+	@-webkit-keyframes step1 {
+	0%   {}
+    100% {  left: 500px;}
+
+}
+	@-webkit-keyframes step2 {
+	0%   {top:20px;}
+    100% {  top: 205px;}
+
+}
+	@-webkit-keyframes step3 {
+	0%   { left: 500px;}
+    100% { transform: rotate(45deg); left: 270px;}
+}
+
+	@-webkit-keyframes step4 {
+	0%   { transform: rotate(45deg);left: 270px;}
+    100% { transform: rotate(0deg); left: 20px; border-color: #0900BD;}
+}
+
+	@-webkit-keyframes step5 {
+	0%   {background-color: transparent; top: 205px; left:20px;}
+    100% {background: radial-gradient(rgb(251, 218, 97), rgb(247, 107, 28));top: 443px; left: 444px; border-radius: 50%; width: 150px; height: 150px; border-width: 0px;}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*                                   INSTRUCTIIONS:
 
@@ -28,9 +379,9 @@ body {
                                       --section copier coller - START--
 ----------------------------------------EXERCICE4-----------------------------------------------------
 */
-#stage {
+/*#stage {
 	background-image: url("images/css_animation_exercise_stage.png");
-	/*background-image: url("images/css_animation_exercise_4.png");*/
+	background-image: url("images/css_animation_exercise_4.png");
 	background-repeat: no-repeat;
 	background-size: cover;
 	width: 600px;
@@ -84,6 +435,11 @@ body {
 	0%   {background-color: transparent; top: 205px; left:20px;}
     100% {background: radial-gradient(rgb(251, 218, 97), rgb(247, 107, 28));top: 443px; left: 444px; border-radius: 50%; width: 150px; height: 150px; border-width: 0px;}
 }
+
+
+*/
+
+
 
 
 
@@ -206,7 +562,7 @@ body {
 	
 }
 #hero {
-	background-image: url();
+	background-image: url("images/css_animation_exercise_stage.png");
 	background-repeat: no-repeat;
 	background-size: cover;
 
