@@ -5,92 +5,230 @@
 }
 
 body {
-	width:90%;
-	height: 1000px;
-	margin: 0 auto 0 auto;
+	width:100%;
+	height: auto;
 	text-align: center;
-
-
 }
+
+/*                                   INSTRUCTIIONS:
+
+                                   ******************
+
+1.    "entre"      --section copier coller - START--  
+
+                   Copier/coller le numéro de l'exercice désiré 
+                  (Voir plus bas --section EXERCICES A COPIER COLLER--)
+
+      "et"       --section copier coller -- END -- 
+
+                                   ******************  
+
+
+
+                                      --section copier coller - START--
+----------------------------------------EXERCICE4-----------------------------------------------------
+*/
 #stage {
 	background-image: url("images/css_animation_exercise_stage.png");
+	/*background-image: url("images/css_animation_exercise_4.png");*/
 	background-repeat: no-repeat;
 	background-size: cover;
-	width: 1000px;
-	height: 800px;
+	width: 600px;
+	height: 600px;
 	opacity: 0.4;
 	margin: 0 auto 0 auto;
-	
 }
-#hero {
-	/*background-image: url("images/css_animation_exercise_square.png");
+	
+	#hero {
+	background-image: url();
 	background-repeat: no-repeat;
 	background-size: cover;
-	width: 1000px;
-	height: 800px;
-	opacity: 0.4;*/
+
+	opacity: 0.4;
 	position: relative;
-	width: 125px;
-	height: 125px;
+	width:75px;
+	height:75px;
 	border: 1px dashed red;
-	top: 30px;
-	left: 30px;
-	/*animation: step1 5s 0s 0s linear forward step2 5s linear;*/
+	top:20px;
+	left:20px;
 	animation-name: step1,step2,step3,step4,step5;
-	animation-duration: 5s,2s,500ms,2.5s,5s;
-	animation-iteration-count:1;
-	animation-delay: 0s,5s,7s,10s,12.5s;
+	animation-duration: 5s,5s,500ms,2.5s,5s;
+	animation-iteration-count:2,2,1,1,1;
+	animation-delay:0s,10s,20s,22.5s,25s;
 	animation-direction: normal;
 	animation-fill-mode: forwards;
 	animation-timing-function: linear;
+}
 
-	
-	
-	
-	
+	@-webkit-keyframes step1 {
+	0%   {}
+    100% {  left: 500px;}
 
+}
+	@-webkit-keyframes step2 {
+	0%   {top:20px;}
+    100% {  top: 205px;}
+
+}
+	@-webkit-keyframes step3 {
+	0%   { left: 500px;}
+    100% { transform: rotate(45deg); left: 270px;}
+}
+
+	@-webkit-keyframes step4 {
+	0%   { transform: rotate(45deg);left: 270px;}
+    100% { transform: rotate(0deg); left: 20px; border-color: #0900BD;}
+}
+
+	@-webkit-keyframes step5 {
+	0%   {background-color: transparent; top: 205px; left:20px;}
+    100% {background: radial-gradient(rgb(251, 218, 97), rgb(247, 107, 28));top: 443px; left: 444px; border-radius: 50%; width: 150px; height: 150px; border-width: 0px;}
+}
+
+
+
+/*                                    --section copier coller -- END -- 
+*/
+ /*                                   --section EXERCICES A COPIER COLLER--         
+
+/*                                   ----------**EXERCICE4**-------------
+
+
+/*                                   ----------**EXERCICE3**-------------
+#stage {
+	background-image: url("images/css_animation_exercise_3.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 600px;
+	height: 600px;
+	opacity: 0.4;
+	margin: 0 auto 0 auto;
 	
 }
+
 @-webkit-keyframes step1 {
 	0%   {  left: 10px;}
     100% {  left: 800px;}
+
+#hero {
+	background-image: url();
+	background-repeat: no-repeat;
+	background-size: cover;
+
+	opacity: 0.4;
+	position: relative;
+	width:75px;
+	height:75px;
+	border: 1px dashed red;
+	top:20px;
+	left:20px;
+	animation-name: exercice3;
+	animation-duration: 2s;
+	animation-iteration-count:infinite;
+	animation-delay: ;
+	animation-direction: alternate;
+	animation-fill-mode: forwards;
+	animation-timing-function: linear;
+
 }
 
-@-webkit-keyframes step2 {
-    0%   {top:0px;}
-    100% {top: 300px;}
+	@-webkit-keyframes exercice3 {
+	0%   {}
+    100% {  left: 500px;}
+
 }
-@-webkit-keyframes step3 {
-    0%   { left: 0px; transform: rotate(0deg);}
-    100% { left: 400px; transform: rotate(45deg);}
+*/
+
+/*                                      ----------**EXERCICE2**-------------
+#stage {
+	background-image: url("images/css_animation_exercise_2.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 600px;
+	height: 600px;
+	opacity: 0.4;
+	margin: 0 auto 0 auto;
+	
 }
-@-webkit-keyframes step4 {
-    0%   {transform: rotate(45deg); border-color: red;left: 400px; }
-    100% {transform: rotate(90deg); border-color: #0900BD ; left:0px;}
+#hero {
+	background-image: url();
+	background-repeat: no-repeat;
+	background-size: cover;
+
+	opacity: 0.4;
+	position: relative;
+	width:75px;
+	height:75px;
+	border: 1px dashed red;
+	top:20px;
+	left:20px;
+	animation-name: exercice2;
+	animation-duration: 5s;
+	animation-iteration-count:infinite;
+	animation-delay: ;
+	animation-direction: normal;
+	animation-fill-mode: forwards;
+	animation-timing-function: linear;
 }
+
 @-webkit-keyframes step5 {
     0%   {transform: rotate(45deg);border-radius:0; background: transparent;, left: 0px; top:400px; width: 100%; }
     100% {transform: rotate(90deg);border-radius: 50% ; background: radial-gradient(#F76B1C,#F8DA61); left:800px; top:600px; width: 150%;}
+
+
+	@-webkit-keyframes exercice2 {
+	0%   {}
+    100% {  left: 500px;}
+
+
 }
+*/
 
 
-/*
-STEP1
-#hero {
-	/*background-image: url("images/css_animation_exercise_square.png");
+
+
+
+
+
+
+
+/*                                      ----------**EXERCICE1**-------------
+
+}
+#stage {
+	background-image: url("images/css_animation_exercise_1.png");
 	background-repeat: no-repeat;
 	background-size: cover;
-	width: 1000px;
-	height: 800px;
+	width: 600px;
+	height: 600px;
+	opacity: 0.4;
+	margin: 0 auto 0 auto;
+	
+}
+#hero {
+	background-image: url();
+	background-repeat: no-repeat;
+	background-size: cover;
+
 	opacity: 0.4;
 	position: relative;
-	width: 125px;
-	height: 125px;
+	width:75px;
+	height:75px;
 	border: 1px dashed red;
-	top: 30px;
-	left: 30px;
-	animation-name: step1;
-	animation-duration: 5s;	
+	top:20px;
+	left:20px;
+	animation-name: exercice1;
+	animation-duration: 5s;
+	animation-iteration-count:1;
+	animation-delay: ;
+	animation-direction: normal;
+	animation-fill-mode: forwards;
+	animation-timing-function: linear;
 }
 
-animation-iteration-count: infinite;*/
+	@-webkit-keyframes exercice1 {
+	0%   {}
+    100% {  left: 500px;}
+
+}
+*/
